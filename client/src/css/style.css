@@ -60,3 +60,27 @@ label{
     padding-left: 170px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    background: black;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav li.active {
+    background: red;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav li a {
+    color: white
+}
