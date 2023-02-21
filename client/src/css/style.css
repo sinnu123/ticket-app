@@ -1,0 +1,62 @@
+.tabletc{
+    border-collapse: collapse;
+    margin-top: 10%;
+}
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+td{
+    border: 1px solid black;
+    padding: 3px 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    padding:6px 20px;
+    background-color:green;
+    border: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-left: 155px;
+ 
+}
+.inputname{
+    margin-left: 23px;
+}
+.inputage{
+    margin-left: 43px;
+    align-items: center;
+}
+.inputdis{
+    margin-left: 2px;
+
+}
+input{
+    border: 2px solid rgb(90, 88, 88);
+    border-radius: 5px;
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h2res{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.tickets{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 100px;
+}
+.indianrailway{
+    padding-left: 170px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
