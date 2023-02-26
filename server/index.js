@@ -19,8 +19,8 @@ app.get('/',(req,res)=>{
     res.send('home page')
 })
 app.get('/tickets/list',(req, res)=>{
-    con.query('select * from tickets',function(err,result){
-        if(err) return res.send('error fetching tickets')
+    con.query('select * from tickets',function(err, result){
+        if(err) return res.send(err.message);
         res.json(result)
     })
 })

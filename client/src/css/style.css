@@ -21,9 +21,7 @@ button{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
-    border-radius: 5px;
-    margin-left: 155px;
- 
+    border-radius: 5px; 
 }
 .inputname{
     margin-left: 23px;
@@ -39,7 +37,7 @@ button{
 input{
     border: 2px solid rgb(90, 88, 88);
     border-radius: 5px;
-    padding-top: 15px;
+    padding: 8px;
     text-transform: capitalize;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -83,4 +81,8 @@ a {
 
 .nav li a {
     color: white
+}
+
+table {
+    border-collapse: collapse;
 }

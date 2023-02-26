@@ -1,0 +1,14 @@
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
