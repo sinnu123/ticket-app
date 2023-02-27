@@ -31,14 +31,23 @@ app.post('/tickets/new',(req,res)=>{
     let distance= req.body.distance
     con.query(`insert into tickets (name,age,fare,distance,status) values ('${name}','${age}','${fare}','${distance}','pending')`, function(err,result){
         if (err) return res.send('unable to insert data')
-        res.send('ticket has been succesfully')
+        res.send('ticket has been added succesfully')
     })
 })
 app.post('/tickets/edit/:id',(req,res)=>{
-     
+     let id = req.params.id
+     let status = req.body.status
+     con.query(`update tickets set status = '${status}' where id = '${id}'`, function(err, result) {
+        if (err) return res.send('unable to update data')
+        res.send('ticket has been updated successfully')
+     })
 })
 app.get('/tickets/delete/:id',(req,res)=>{
-
+    let id = req.params.id
+    con.query(`delete from tickets where id = ${id}`, function(err, result) {
+        if(err) return res.send('error deleting ticket')
+        res.send('Ticket has been deleted successfully!')
+    })
 })
 app.post('/tickets/view/:id',(req,res)=>{
 

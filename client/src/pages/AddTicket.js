@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import axios from "axios"
 import './AddTicket.css'
 
 export default function AddTicket() {
@@ -20,6 +21,16 @@ export default function AddTicket() {
         }
     }, [age, distance])
 
+    const addTicket = async () => {
+        let res = await axios.post('http://localhost:4000/tickets/new', {
+            name,
+            age,
+            fare,
+            distance
+        })
+        alert(res.data)
+    }
+
     return <div>
         <h1> Add New Ticket</h1>
         <label>Name</label>
@@ -30,6 +41,6 @@ export default function AddTicket() {
         <input type='text' value={distance} onChange={(e) => setDistance(e.target.value)} />
         <label>Fare</label>
         <input type='text' value={fare} disabled />
-        <button>Submit</button>
+        <button onClick={addTicket}>Submit</button>
     </div>
 }
